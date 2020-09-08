@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Animal Photo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    
+    <h1 class="text-center mt-5">Get a random animal photo</h1>
+    
+    <div class="container d-flex  flex-column align-items-center 100w my-5">
+        <div>
+            <label for="animal">Please select an animal</label>
+            <select data-select name="animal" id="animal">
+                <option value="dog">Dog</option>
+                <option value="cat">Cat</option>
+                <option value="fox">Fox</option>
+            </select>
+        </div>
+        <button data-btn-animal type="button" class="btn btn-secondary my-3 w-25">Get Photo</button>
+    </div>
+
+    <div class="container text-center">
+        <img data-picture src="" height="500px">
+        <video data-video autoplay height="500px">
+            <source src="">
+        </video>
+    </div>
+
+    <script src="../scripts/random-animal.js"></script>
+</body>
+</html>
